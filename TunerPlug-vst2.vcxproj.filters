@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="TunerPlug.cpp" />
+    <ClCompile Include="..\..\WDL\IPlug\IPlugVST.cpp">
+      <Filter>vst2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\CoreTimeDomainFeatures.cpp" />
+    <ClCompile Include="src\core\CoreFrequencyDomainFeatures.cpp" />
+    <ClCompile Include="src\fft\WindowFunctions.cpp" />
+    <ClCompile Include="src\fft\AccelerateFFT.cpp" />
+    <ClCompile Include="src\mfcc\MFCC.cpp" />
+    <ClCompile Include="src\onset-detection-functions\OnsetDetectionFunction.cpp" />
+    <ClCompile Include="src\pitch\Yin.cpp" />
+    <ClCompile Include="src\Gist.cpp" />
+    <ClCompile Include="libs\kiss_fft130\kiss_fft.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TunerPlug.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\..\WDL\IPlug\IPlugVST.h">
+      <Filter>vst2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TunerPlug.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="vst2">
+      <UniqueIdentifier>{ea16de74-9d15-4c60-ba09-d0924088d3e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
