@@ -2,7 +2,7 @@
 General Purpose Tuner Plugin using Oli Larkin's WDL-OL framework:
 https://github.com/olilarkin/wdl-ol
 
-which can be compiled as Standalone App or VST2, VST3 and AU Plugin
+which can be compiled as VST2, VST3 and AU Plugin or macOS/Win32 standalone
 
 ## Dependencies
 
