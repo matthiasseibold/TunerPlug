@@ -46,12 +46,12 @@ TunerPlug::TunerPlug(IPlugInstanceInfo instanceInfo)
 
   	// background
 	IGraphics* pGraphics = MakeGraphics(this, kWidth, kHeight);
-	pGraphics->AttachPanelBackground(&COLOR_ORANGE);
+	pGraphics->AttachPanelBackground(&COLOR_WHITE);
 
 	// text box
 	IRECT tmpRect(80, 50, 200, 80.);
 	IText textProps(30, &COLOR_BLACK, "Arial", IText::kStyleNormal, IText::kAlignCenter, 0, IText::kQualityDefault);
-	mText = pGraphics->AttachControl(new ITextControl(this, tmpRect, &textProps, "Out Of Tune"));
+	mText = pGraphics->AttachControl(new ITextControl(this, tmpRect, &textProps, "Tuner"));
 
 	IRECT tmprect(5, GUI_HEIGHT - 22, GUI_WIDTH - 5, GUI_HEIGHT - 5);
 	pGraphics->AttachControl((msgZone = new IGUIBRRectWT(this, tmprect, &COLOR_WHITE, &COLOR_WHITE, 3)));
@@ -164,10 +164,6 @@ void TunerPlug::ProcessDoubleReplacing(double** inputs, double** outputs, int nF
 		// frequency
 		char freqString[30];
 		sprintf(freqString, "Frequency: %.2f Hz", pitch);
-		
-		// print nFrames
-		// char framesString[30];
-		// sprintf(framesString, "frames: %i", nFrames);
 		
 		// Write strings to GUI
 		msgZone->SetText(freqString);
