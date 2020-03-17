@@ -1,5 +1,5 @@
 # TunerPlug
-General Purpose Tuner Plugin using a modified example project from Oli Larkin's WDL-OL framework:
+General Purpose Tuner Plugin based on the YIN algorithm using a modified example project from Oli Larkin's WDL-OL framework:
 https://github.com/olilarkin/wdl-ol
 
 which can be compiled as VST2, VST3 and AU Plugin or macOS/Win32 standalone
