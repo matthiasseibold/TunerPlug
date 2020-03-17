@@ -16,5 +16,5 @@ but can be made more performant using FFTW3.
 
 ## Build
 
-Clone this folder into IPlugExamples/ and configure wdl-ol according to:
+Configure wdl-ol according to:
 http://www.martin-finke.de/blog/articles/audio-plugins-002-setting-up-wdl-ol/
