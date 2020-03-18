@@ -147,7 +147,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>$(VST_DEFS);$(DEBUG_DEFS);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalIncludeDirectories>D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src\core;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src\fft;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src\mfcc;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src\onset-detection-functions;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src\pitch;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\kiss_fft130;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist\core;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist\\fft;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist\\mfcc;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist\\onset-detection-functions;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist\\pitch;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\kiss_fft130;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -176,7 +176,7 @@
       <PreprocessorDefinitions>$(VST_DEFS);$(RELEASE_DEFS);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src\core;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src\fft;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src\mfcc;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src\onset-detection-functions;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src\pitch;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\kiss_fft130;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist\core;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist\\fft;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist\\mfcc;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist\\onset-detection-functions;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist\\pitch;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\kiss_fft130;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -211,7 +211,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>$(VST_DEFS);$(TRACER_DEFS);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src\core;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src\fft;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src\mfcc;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src\onset-detection-functions;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\src\pitch;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\kiss_fft130;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist\core;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist\\fft;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist\\mfcc;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist\\onset-detection-functions;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\gist\\pitch;D:\Projects\wdl-ol\IPlugExamples\TunerPlug\libs\kiss_fft130;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -245,15 +245,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\WDL\IPlug\IPlugVST.cpp" />
+    <ClCompile Include="libs\gist\core\CoreFrequencyDomainFeatures.cpp" />
+    <ClCompile Include="libs\gist\core\CoreTimeDomainFeatures.cpp" />
+    <ClCompile Include="libs\gist\fft\AccelerateFFT.cpp" />
+    <ClCompile Include="libs\gist\fft\WindowFunctions.cpp" />
+    <ClCompile Include="libs\gist\Gist.cpp" />
+    <ClCompile Include="libs\gist\mfcc\MFCC.cpp" />
+    <ClCompile Include="libs\gist\onset-detection-functions\OnsetDetectionFunction.cpp" />
+    <ClCompile Include="libs\gist\pitch\Yin.cpp" />
     <ClCompile Include="libs\kiss_fft130\kiss_fft.c" />
-    <ClCompile Include="src\core\CoreFrequencyDomainFeatures.cpp" />
-    <ClCompile Include="src\core\CoreTimeDomainFeatures.cpp" />
-    <ClCompile Include="src\fft\AccelerateFFT.cpp" />
-    <ClCompile Include="src\fft\WindowFunctions.cpp" />
-    <ClCompile Include="src\Gist.cpp" />
-    <ClCompile Include="src\mfcc\MFCC.cpp" />
-    <ClCompile Include="src\onset-detection-functions\OnsetDetectionFunction.cpp" />
-    <ClCompile Include="src\pitch\Yin.cpp" />
     <ClCompile Include="TunerPlug.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -2,7 +2,7 @@
 #define __TUNERPLUG__
 
 #include "IPlug_include_in_plug_hdr.h"
-#include "src/Gist.h"
+#include "libs/gist/Gist.h"
 
 #include "IGUIBRRectWT.h"
 

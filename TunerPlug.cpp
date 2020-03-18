@@ -50,8 +50,8 @@ TunerPlug::TunerPlug(IPlugInstanceInfo instanceInfo)
 
 	// title box
 	IRECT tmpRect(80, 50, 200, 80.);
-	IText textProps(30, &COLOR_BLACK, "Arial", IText::kStyleNormal, IText::kAlignCenter, 0, IText::kQualityDefault);
-	mText = pGraphics->AttachControl(new ITextControl(this, tmpRect, &textProps, "Tuner"));
+	IText textProps(45, &COLOR_BLACK, "Arial", IText::kStyleNormal, IText::kAlignCenter, 0, IText::kQualityDefault);
+	mText = pGraphics->AttachControl(new ITextControl(this, tmpRect, &textProps, "TunerPlug"));
 
 	// text boxes
 	IRECT tmprect(5, GUI_HEIGHT - 22, GUI_WIDTH - 5, GUI_HEIGHT - 5);

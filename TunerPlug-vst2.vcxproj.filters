@@ -5,15 +5,15 @@
     <ClCompile Include="..\..\WDL\IPlug\IPlugVST.cpp">
       <Filter>vst2</Filter>
     </ClCompile>
-    <ClCompile Include="src\core\CoreTimeDomainFeatures.cpp" />
-    <ClCompile Include="src\core\CoreFrequencyDomainFeatures.cpp" />
-    <ClCompile Include="src\fft\WindowFunctions.cpp" />
-    <ClCompile Include="src\fft\AccelerateFFT.cpp" />
-    <ClCompile Include="src\mfcc\MFCC.cpp" />
-    <ClCompile Include="src\onset-detection-functions\OnsetDetectionFunction.cpp" />
-    <ClCompile Include="src\pitch\Yin.cpp" />
-    <ClCompile Include="src\Gist.cpp" />
     <ClCompile Include="libs\kiss_fft130\kiss_fft.c" />
+    <ClCompile Include="libs\gist\Gist.cpp" />
+    <ClCompile Include="libs\gist\pitch\Yin.cpp" />
+    <ClCompile Include="libs\gist\onset-detection-functions\OnsetDetectionFunction.cpp" />
+    <ClCompile Include="libs\gist\mfcc\MFCC.cpp" />
+    <ClCompile Include="libs\gist\fft\WindowFunctions.cpp" />
+    <ClCompile Include="libs\gist\fft\AccelerateFFT.cpp" />
+    <ClCompile Include="libs\gist\core\CoreTimeDomainFeatures.cpp" />
+    <ClCompile Include="libs\gist\core\CoreFrequencyDomainFeatures.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TunerPlug.h" />
