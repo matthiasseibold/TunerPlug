@@ -7,7 +7,7 @@
 #include <iostream>
 #include <sstream>
 
-// #define DEBUG
+#define DEBUG
 
 # ifdef DEBUG 
 
@@ -48,11 +48,12 @@ TunerPlug::TunerPlug(IPlugInstanceInfo instanceInfo)
 	IGraphics* pGraphics = MakeGraphics(this, kWidth, kHeight);
 	pGraphics->AttachPanelBackground(&COLOR_WHITE);
 
-	// text box
+	// title box
 	IRECT tmpRect(80, 50, 200, 80.);
 	IText textProps(30, &COLOR_BLACK, "Arial", IText::kStyleNormal, IText::kAlignCenter, 0, IText::kQualityDefault);
 	mText = pGraphics->AttachControl(new ITextControl(this, tmpRect, &textProps, "Tuner"));
 
+	// text boxes
 	IRECT tmprect(5, GUI_HEIGHT - 22, GUI_WIDTH - 5, GUI_HEIGHT - 5);
 	pGraphics->AttachControl((msgZone = new IGUIBRRectWT(this, tmprect, &COLOR_WHITE, &COLOR_WHITE, 3)));
 	msgZone->SetText("init_freq");
@@ -93,7 +94,7 @@ void TunerPlug::ProcessDoubleReplacing(double** inputs, double** outputs, int nF
 
 	// generate sine wave for testing
 	double amplitude = 1;
-	double frequency = 1288;
+	double frequency = 31;
 	double phase = 0.0;
 	double time = 0.0;
 	double deltaTime = 1 / GetSampleRate();
@@ -106,7 +107,7 @@ void TunerPlug::ProcessDoubleReplacing(double** inputs, double** outputs, int nF
 
 #else
   
-// plugin output
+	// plugin output
 	for (int s = 0; s < nFrames; ++s, ++in1, ++in2, ++out1, ++out2)
 	{
 		*out1 = *in1;
